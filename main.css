@@ -1,0 +1,174 @@
+/* Colors used in this design include:
+black: #000000
+white: #ffffff
+light grey: #d8d9db
+buttons on hover: #ebebeb
+button active state: #bbbcbe
+function buttons: #df974c
+function buttons on hover: #dfb07e
+function button active state: #dd8d37
+The overall width of this calculator is 400px */
+
+
+/* Create a wrapper with a width of 400px to set up the calculator. */
+
+body {
+  width: 400px;
+}
+
+#entry {
+  color: #ffffff;
+  text-align: right;
+  width: 100%;
+  border: solid #000000 0.5px;
+  font-size: larger;
+}
+
+.container {
+  /* width: 400px; */
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid #000000 0.5px;
+  gap: 0.5px;
+  justify-content: space-between;
+}
+
+.results {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: right;
+  font-family: monospace;
+  font-size: larger;
+}
+
+#equals {
+  background-color: #df974c;
+  border-color: #df974c;
+  width: 24.5%;
+}
+
+#add {
+  background-color: #df974c;
+  border-color: #df974c;
+  width: 24.5%;
+}
+
+#subtract {
+  background-color: #df974c;
+  border-color: #df974c;
+  width: 24.5%;
+}
+
+#divide {
+    background-color: #df974c;
+    border-color: #df974c;
+    width: 24.5%;
+}
+
+#multiply {
+    background-color: #df974c;
+    border-color: #df974c;
+    width: 24.5%;
+}
+
+#zero {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 74.5%;
+}
+
+#one {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+ #two {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+ #three {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+ #four {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+ #five {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+ #six {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+ #seven {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+ #eight {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+ #nine {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+ #clear {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 49.5%;
+ }
+
+ #backspace {
+  background-color: #d8d9db;
+  border-color: #d8d9db;
+  color: #000000;
+  width: 24.5%;
+ }
+
+/* Determine how many rows and columns we need.
+
+Identify elements that occupy more than one column.
+
+Determine the HTML tags required to code rows and cells.
+
+Code a single row of 4 elements to start with and see if you can get that working.
+
+Now add the other rows of 4 elements.
+
+Finally, add the rows where there are fewer than 4 elements. What do you need to adjust to get these to work?
+
+Once your layout is mostly working, add the colors and make it pretty. */
+
+/* The secret to getting equal gutters (which is what you call the black space between buttons): you can set width to be 25% (so four of them fit on a line) and then use justify-cotent: space-between to evenly space them. That'll give them a gutter of roughly .5% of the whole width. The problem with using percentages in conjuections with heights: your heights and widths are different. 5% of height is not the same of 5% of width, and that'll make the gutters look weird. You want the bottom gutters to be the same size as the side gutters. margin-bottom to the resuce! If you give the row a margin-bottom of .5% (if you're using my same numbers) then that'll work since margin is always measured as a function of width (just one of those things you have to know!) Hopefully that helps.
