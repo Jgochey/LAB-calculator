@@ -141,3 +141,19 @@
   color: #000000;
   width: 24.5%;
  }
+
+#multiply:hover, #divide:hover, #add:hover, #subtract:hover, #equals:hover {
+  background-color: #dfb07e;
+ }
+
+ #multiply:active, #divide:active, #add:active, #subtract:active, #equals:active {
+  background-color: #dd8d37
+ }
+
+ #zero:hover, #clear:hover, #backspace:hover, #seven:hover, #eight:hover, #nine:hover, #four:hover, #five:hover, #six:hover, #one:hover, #two:hover, #three:hover  {
+  background-color: #ebebeb;
+ }
+
+ #zero:active, #clear:active, #backspace:active, #seven:active, #eight:active, #nine:active, #four:active, #five:active, #six:active, #one:active, #two:active, #three:active {
+  background-color: #bbbcbe
+ }
